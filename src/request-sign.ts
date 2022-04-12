@@ -98,7 +98,7 @@ const request = async () => {
     ])
 
     console.log(JSON.stringify(tx.toData()));
-    terra.tx.broadcast(tx).then(console.log);
+    terra.tx.broadcastSync(tx).then(console.log);
 }
 
 request();
